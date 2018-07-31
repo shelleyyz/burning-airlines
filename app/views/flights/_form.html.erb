@@ -31,10 +31,7 @@
     <%= form.date_select :date %>
   </div>
 
-  <div class="field">
-    <%= form.label :plane_id %>
-    <%= form.collection_select :plane_id, Plane.order(:name), :id, :name, include_blank: true %>
-  </div>
+  <%= form.select :plane_id, @planes, :include_blank => true %>
 
   <div class="actions">
     <%= form.submit %>

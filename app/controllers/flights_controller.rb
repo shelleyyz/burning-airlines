@@ -5,16 +5,22 @@ class FlightsController < ApplicationController
   # GET /flights.json
   def index
     @flights = Flight.all
+  @planes = Plane.all
   end
 
   # GET /flights/1
   # GET /flights/1.json
   def show
+    @flight = Flight.find params[:id]
+  @id = @flight.plane_id
+  @plane = Plane.where(id: @id)[0]
+
   end
 
   # GET /flights/new
   def new
     @flight = Flight.new
+    @planes = Plane.all.map {|e| [e.name, e.id]}
   end
 
   # GET /flights/1/edit
