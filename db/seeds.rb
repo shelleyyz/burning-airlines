@@ -50,8 +50,8 @@ u5 = User.create :name => "Joel", :password => "chicken"
 puts "Created #{User.all.length} users."
 
 Plane.destroy_all
-p1 = Plane.create :name => "El Guerrero", :rows => 5, :columns => 4
-p2 = Plane.create :name => "La Melaza", :rows => 10, :columns => 3
+p1 = Plane.create :name => "Qantas", :rows => 5, :columns => 4
+p2 = Plane.create :name => "Jetstar", :rows => 10, :columns => 3
 
 Flight.destroy_all
 f1 = Flight.create :flight_num => "100", :origin => "Sydney", :destination => "Hong Kong", :date => '2017/12/24'
