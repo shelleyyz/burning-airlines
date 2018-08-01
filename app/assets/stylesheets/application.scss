@@ -1,0 +1,35 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.navbar {
+  background: #0c73cc !important;
+  font-family: 'PT Sans', sans-serif;
+  }
+
+.navbar .nav-item .nav-link {
+  color: #eee !important;
+  padding: 30px 20px 30px 20px;
+}
+
+.navbar-brand{
+  color: white;
+}
+
+.navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
+  color: red !important;
+}
+
+.navbar-nav {
+  margin-top: 1rem;
+}
+
+ul {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
