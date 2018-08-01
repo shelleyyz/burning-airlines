@@ -1,0 +1,26 @@
+<h1>Burning Airlines</h1>
+<h3>Log in</h3>
+
+<h2><%= flash[:error] %></h2>
+
+<%= form_tag login_path do %>
+<div class="form-group">
+  <%= label_tag :name %>
+</div>
+<div class="form-group">
+  <%= text_field_tag :name, nil, :class => 'form-control', :placeholder => 'Shelley'%>
+</div>
+<div class="form-group">
+  <%= label_tag :password %>
+</div>
+<div class="form-group">
+  <%= password_field_tag :password, nil, :class => 'form-control' %>
+</div>
+
+<br>
+<br>
+<br>
+
+<%= submit_tag "Log in", :class => "btn btn-primary" %>
+
+<% end %>
