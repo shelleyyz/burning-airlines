@@ -187,11 +187,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
-<<<<<<< HEAD
-  bootstrap-sass (~> 3.3.7)
-=======
   bootstrap-sass (~> 3.3.6)
->>>>>>> f2e863d42a7ab4d4f50bd85c2aac13cb9eb8f677
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
