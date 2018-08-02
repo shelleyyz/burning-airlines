@@ -55,9 +55,13 @@ p2 = Plane.create :name => "Jetstar", :rows => 10, :columns => 3
 
 Flight.destroy_all
 f1 = Flight.create :flight_num => "100", :origin => "Sydney", :destination => "Hong Kong", :date => '2017/12/24'
-f2 = Flight.create :flight_num => "200", :origin => "Hong Kong", :destination => "Sydney", :date => '2017/12/25'
+f2 = Flight.create :flight_num => "200", :origin => "Sydney", :destination => "Hong Kong", :date => '2017/12/25'
 f3 = Flight.create :flight_num => "300", :origin => "Beijing", :destination => "New York", :date => '2017/12/24'
-f4 = Flight.create :flight_num => "400", :origin => "Canberra", :destination => "Brisbane", :date => '2017/12/25'
+f4 = Flight.create :flight_num => "400", :origin => "Canberra", :destination => "Brisbane", :date => '2017/12/26'
+f5 = Flight.create :flight_num => "500", :origin => "Sydney", :destination => "Hong Kong", :date => '2017/12/27'
+f6 = Flight.create :flight_num => "600", :origin => "Beijing", :destination => "New York", :date => '2017/12/28'
+f7 = Flight.create :flight_num => "700", :origin => "Sydney", :destination => "Hong Kong", :date => '2017/12/29'
+f8 = Flight.create :flight_num => "800", :origin => "Canberra", :destination => "Brisbane", :date => '2017/12/15'
 
 Reservation.destroy_all
 
@@ -66,8 +70,8 @@ r2 = Reservation.create :seat => "B2"
 r3 = Reservation.create :seat => "C3"
 r4 = Reservation.create :seat => "A4"
 
-p1.flights << f1 << f2
-p2.flights << f3 << f4
+p1.flights << f1 << f2 << f5
+p2.flights << f3 << f4 << f6
 
 f1.reservations << r1
 f2.reservations << r2
